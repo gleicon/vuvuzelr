@@ -1,0 +1,9 @@
+This is the code behind http://vuvuzelr.7co.cc, a simple filtering proxy built on Sinatra and Nokogiri.
+There are two versions, one with no cache and other using Redis as cache. I am running it behind NGINX using 4 thin instances.
+Simply move it to your app folder, configure nginx with the provided sites-avaliable config file (for debian and ubuntu), use thin with its init.d script and be happy.
+
+Enjoy
+
+gleicon 2010
+http://zenmachine.wordpress.com | http://github.com/gleicon
+
