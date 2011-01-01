@@ -11,13 +11,13 @@ before do
   content_type :html, 'charset' => 'utf-8'
 end
 
-get '/url/*' do
+get '/*' do
   url = params["splat"].to_s
   redirect '/' unless validate_url url
   u = filter_and_replace url
 end
 
-post '/url' do
+post '/' do
   url = params[:url]
   redirect '/' unless validate_url url
   filter_and_replace url
